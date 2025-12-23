@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简洁新闻</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 用于图表的库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <div class="nav-left">
+                <a href="#" class="logo">SPOT NEWS</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">艺术</a>
+                <a href="#" class="nav-link">文化</a>
+                <a href="#" class="nav-link">设计</a>
+                <a href="#" class="nav-link">市场</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 新闻主体内容 -->
+    <main class="content-container">
+        <!-- 新闻标题区域 -->
+        <header class="article-header">
+            <h1 class="article-title">Art Basel Hong Kong 2025</h1>
+            <p class="article-subtitle">ASIAN GALLERIES REPRESENT 45.8%, SIGNALING SHIFT TO ASIA</p>
+            <div class="article-meta">
+                <span class="article-date">2025.3.31</span>
+                <span class="article-author">CHEN RUQING, WANG YUNG!</span>
+            </div>
+        </header>
+
+        <!-- 新闻正文 -->
+        <article class="article-content">
+            <!-- 分隔线 -->
+            <hr class="divider">
+
+            <!-- 新闻导语 -->
+            <p class="article-lead">
+                <i>Art Basel Hong Kong 2025 closed on March 30, marking the significant shift in the global art scene. This year, Asian galleries made up 45.8% of all exhibitors, while European and North American numbers slipped.</i>
+            </p>
+
+            <!-- 新闻正文段落 -->
+            <div class="article-body">
+                <p>The 2025 edition of Art Basel Hong Kong concluded on Sunday, March 30, with strong sales reported across all sectors. The fair attracted over 85,000 visitors during its five-day run, with collectors and institutions from across Asia demonstrating particularly strong buying power.</p>
+
+                <p>This year's fair featured 242 galleries from 40 countries and territories, with 45.8% of exhibitors hailing from Asia. This marks a significant increase from previous years and underscores the region's growing importance in the global art market.</p>
+
+                <p>European galleries accounted for 32.5% of participants, down from 35.2% in 2024, while North American representation fell to 18.3% from 21.1% last year. Galleries from other regions made up the remaining 3.4%.</p>
+
+                <p>"The shift toward Asia is undeniable," said fair director. "We're seeing not only more Asian galleries participating, but also stronger engagement from Asian collectors across all price points."</p>
+            </div>
+
+            <!-- 图表区域 -->
+            <section class="chart-section">
+                <h2 class="chart-title">Art Basel Hong Kong 2025 Gallery Distribution</h2>
+                
+                <!-- 图表容器 -->
+                <div class="chart-container">
+                    <canvas id="galleryChart"></canvas>
+                </div>
+                
+                <!-- 图表说明 -->
+                <div class="chart-notes">
+                    <p><i>Source: Art Basel Hong Kong 2025 official report. Asian galleries now represent nearly half of all exhibitors at the fair.</i></p>
+                </div>
+            </section>
+
+            <!-- 添加新闻区域 (可选) -->
+            <section class="add-news-section">
+                <h3><i class="fas fa-plus"></i> 添加新闻</h3>
+                <form id="simple-news-form">
+                    <input type="text" id="simple-title" placeholder="新闻标题" required>
+                    <textarea id="simple-content" placeholder="新闻内容..." rows="4" required></textarea>
+                    <button type="submit" class="btn-submit">发布新闻</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <p>© 2025 SPOT NEWS. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
