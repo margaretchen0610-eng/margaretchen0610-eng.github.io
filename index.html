@@ -95,11 +95,13 @@
         }
             /* 让图片和文字并排的样式 */
         .content-with-image {
-            display: flex; /* 核心指令：开启并排模式 */
-            flex-wrap: wrap; /* 空间不够时自动换行 */
-            align-items: flex-start; /* 顶部对齐 */
-            gap: 40px; /* 图片和文字的间距 */
-            margin: 30px 0;
+            display: flex !important;
+            flex-wrap: wrap !important;
+        align-items: flex-start !important;
+        gap: 40px !important;
+        margin: 30px 0 !important;
+        background-color: yellow !important; /* 临时添加，高亮该区域 */
+        border: 3px solid red !important; /* 临时添加，显示边框 */
         }
         .text-content {
             flex: 1; /* 文字部分自动占满剩余空间 */
